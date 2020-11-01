@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.menu-trigger {
+    color: #FFFFFF;
+    background: transparent;
+    width: 199px;
+    height: 40px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 6px;
+    vertical-align: middle;
+    transition: box-shadow 0.4s ease;
+    margin-right: 90px;
+}
+
+.menu-trigger:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+    background: transparent;
+    border-radius: 8px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    width: 199px;
+    height: 40px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin: 10px;
+
+}
+
+.menu li:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 10px;
+    display: block;
+}
