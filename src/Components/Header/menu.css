@@ -67,7 +67,7 @@ display: flex;
 }
 
 .menu li {
-    width: 199px;
+    width: fit-content;
     height: 40px;
     border: 2px solid #FFFFFF;
     box-sizing: border-box;

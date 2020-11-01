@@ -1,10 +1,7 @@
 import React, {useRef}         from "react";
 import "./menu.css";
 import {useDetectOutsideClick} from "./useDetectOutsideClick";
-/*
- * Read the blog post here:
- * https://letsbuildui.dev/articles/building-a-dropdown-menu-component-with-react-hooks
- */
+
 export default function Header() {
     const dropdownRef = useRef(null);
     const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
@@ -23,16 +20,16 @@ export default function Header() {
                 >
                     <ul>
                         <li>
-                            <a href="#">Яндекс.Музыка</a>
+                            <a href="#">Яндекс.Музыка ↗</a>
                         </li>
                         <li>
-                            <a href="#">Spotify</a>
+                            <a href="#">Spotify ↗</a>
                         </li>
                         <li>
-                            <a href="#">Apple Music</a>
+                            <a href="#">Apple Music ↗</a>
                         </li>
                         <li>
-                            <a href="#">VK Music</a>
+                            <a href="#">VK Music ↗</a>
                         </li>
                     </ul>
                 </nav>
