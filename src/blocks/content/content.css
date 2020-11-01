@@ -1,1 +1,21 @@
-.content.css
+.content {
+  background-color: #ffffff;
+  color: #000000;
+  padding-top: 64px;
+  padding-left: 58px;
+  padding-bottom: 86px;
+}
+
+.content__title {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.content__text {
+  max-width: 716px;
+}
+
+.content__tesis-items {
+  list-style: none;
+}
