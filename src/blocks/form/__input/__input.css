@@ -5,6 +5,7 @@
   padding: 19px 24px;
   color: #000000;
   margin-top: 16px;
+  outline: none;
 }
 
 .form__input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
