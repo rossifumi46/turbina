@@ -1,11 +1,5 @@
 import React from "react";
 
-<<<<<<< Updated upstream
-function App() {
-  return (
-    <div className="root">
-
-=======
 import Menu from "../Menu/Menu.js";
 import Content from "../Content/Content.js";
 
@@ -15,7 +9,6 @@ function App() {
     <div className="root">
       <Menu/>
       <Content/>
->>>>>>> Stashed changes
     </div>
   );
 }
