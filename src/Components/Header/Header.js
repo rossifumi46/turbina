@@ -8,7 +8,7 @@ export default function Header() {
     const onClick = () => setIsActive(!isActive);
 
     return (
-        <div className="header-container">
+        <header className="header-container">
             <a href="#" className="header__logo" ></a>
             <div className="menu-container">
                 <button onClick={onClick} className="menu-trigger">
@@ -34,6 +34,6 @@ export default function Header() {
                     </ul>
                 </nav>
             </div>
-        </div>
+        </header>
     );
 }

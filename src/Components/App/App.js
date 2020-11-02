@@ -1,13 +1,13 @@
 import React   from "react";
-import Header  from "../Header/Header.js";
-import Form    from "../Form/Form.js";
+import Main  from "../Main/Main.js";
+import Content from "../Content/Content.js";
 
 import "./../../index.css"
-import Content from "../Content/Content";
+
 function App() {
   return (
     <div className="root">
-      <Header className="header"/>
+      <Main/>
       <Content/>
     </div>
   );

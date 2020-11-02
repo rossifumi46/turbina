@@ -9,7 +9,8 @@ body {
 display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
+    width: 100%;
+    padding:20px;
 }
 .menu-container {
     position: relative;
@@ -20,6 +21,10 @@ display: flex;
 }
 
 .menu-trigger {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
     color: #FFFFFF;
     background: transparent;
     width: 199px;
@@ -28,13 +33,9 @@ display: flex;
     box-sizing: border-box;
     border-radius: 30px;
     cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 4px 6px;
     vertical-align: middle;
     transition: box-shadow 0.4s ease;
-    margin-right: 90px;
     outline: none;
 }
 
@@ -63,6 +64,7 @@ display: flex;
 
 .menu ul {
     list-style: none;
+    text-align: -webkit-right;
     padding: 0;
     margin: 0;
 }
