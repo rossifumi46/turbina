@@ -1,14 +1,13 @@
 .form__input {
   background: none;
-  border: 2px solid #000000;
-  border-radius: 30px;
+  border-bottom: 2px solid #000000;
   padding: 19px 24px;
   color: #000000;
   margin-top: 16px;
 }
 
 .form__input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #000000;
+  color: rgba(0, 0, 0, 0.4);
     opacity: 1; /* Firefox */
 }
 
@@ -27,10 +26,14 @@ input[type="checkbox"] {
   border-radius: 50%;
   border: 2px solid black;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .invisible-checkbox:checked + .visible-checkbox {
-  background-image: url('https://code.s3.yandex.net/web-code/tick.svg');
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: black;
 }
 
 .invisible-checkbox:disabled + .visible-checkbox  {
@@ -38,7 +41,10 @@ input[type="checkbox"] {
 }
 
 .invisible-checkbox:disabled:checked + .visible-checkbox  {
-  background-image: url('https://code.s3.yandex.net/web-code/tick_grey.svg');
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  border: 2px solid black;
 }
 
 .invisible-checkbox:focus + .visible-checkbox  {
@@ -46,12 +52,9 @@ input[type="checkbox"] {
 }
 
 .form__input_textarea {
-  min-height: 246px;
+  min-height: 60px;
   resize: none;
-}
-
-.form__input_text::placeholder {
-
+  margin: 0;
 }
 
 .checkbox {
@@ -61,3 +64,4 @@ input[type="checkbox"] {
 .form__label-text {
   margin-right: 14px;
 }
+
