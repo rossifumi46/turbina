@@ -8,7 +8,7 @@ import "./../../index.css"
 function App() {
   return (
     <div className="root">
-      {/* <Main/> */}
+      <Main/>
       <Content/>
       <Footer/>
     </div>
