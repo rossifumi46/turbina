@@ -1,6 +1,5 @@
-import React     from 'react';
-import "./turbina.css";
-import turbina from '../../images/turbina.png';
+import React   from 'react';
+import turbina from '../images/turbina.png';
 
 
 const Turbina = () => {

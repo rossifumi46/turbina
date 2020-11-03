@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Info from '../Info/Info.js';
-import Form from '../Form/Form.js';
+import Info from './Info.js';
+import Form from './Form.js';
 
-import "./content.css";
+
 
 
 const Content = () => {

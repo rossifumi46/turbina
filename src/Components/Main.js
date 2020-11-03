@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from '../Header/Header.js';
-import Turbina from '../Turbina/Turbina.js';
-import './main.css';
+import Header  from './Header/Header.js';
+import Turbina from './Turbina.js';
+
 
 
 const Main = () => {

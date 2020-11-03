@@ -1,7 +1,6 @@
 import React from 'react';
 
-import "./__input/form__input.css";
-import "./form.css";
+
 
 
 const Form = () => {

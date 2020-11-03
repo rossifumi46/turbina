@@ -1,0 +1,7 @@
+.info__thesis-item {
+    margin-top: 30px;
+}
+
+.info__thesis-item:first-of-type {
+    margin-top: 0;
+}
