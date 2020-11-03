@@ -11,12 +11,12 @@ const Form = () => {
 		<p className="form__ps">Заполняя эту форму, вы становитесь частью проекта.</p>
       <form action="submit">
 						<div className="form__inputs">
-              <input className="form__input" type="text" placeholder="Имя и фамилия автора" minlength="2" maxlength="30" required/>
-              <input className="form__input" type="email" placeholder="Почта" minlength="5" required/>
-              <input className="form__input" type="tel" placeholder="Телефон" required maxlength="11"/>
+              <input className="form__input" type="text" placeholder="Имя и фамилия автора" required/>
+              <input className="form__input" type="email" placeholder="Почта" required/>
+              <input className="form__input" type="tel" placeholder="Телефон"/>
               <textarea className="form__input form__input_textarea" type="textarea" placeholder="Стихи"></textarea>
 						</div>
-						<div class="checkbox">
+						<div className="checkbox">
 							<label>
 								<input id="1" className="invisible-checkbox" type="checkbox"/>
 								<span className="visible-checkbox"></span>
