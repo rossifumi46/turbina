@@ -2,15 +2,19 @@
     background: none;
     border: none;
     border-bottom: 2px solid #000000;
-    padding: 19px 24px;
+    padding: 19px 0;
     color: #000000;
+    font-size: 10px;
+    font-family: inherit;
+    margin: 0;
     margin-top: 16px;
     outline: none;
 }
 
 .form__input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #000000;
+    color: rgba(0, 0, 0, 0.4);
     opacity: 1; /* Firefox */
+    font-family: inherit;
 }
 
 input[type="checkbox"] {
