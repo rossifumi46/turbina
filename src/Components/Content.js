@@ -7,6 +7,7 @@ import Form from './Form.js';
 const Content = () => {
     return (
         <div className="content">
+
             <Info/>
             <Form/>
         </div>
