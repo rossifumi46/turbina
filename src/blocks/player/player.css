@@ -1,0 +1,124 @@
+.player {
+    /* display: flex; */
+    padding: 0 25px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.player__control {
+    display: flex;
+}
+
+.play {
+    background-position: center;
+    background-image: url('../../images/play.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
+    width: 20px;
+    height: 16px;
+
+}
+
+
+
+.more {
+    background-position: center;
+    background-image: url('../../images/more.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
+    margin-left: 20px;
+    width: 24px;
+    height: 24px;
+    outline: none;
+}
+
+.hide {
+    background-image: url('../../images/hide.svg');
+}
+
+.player__wrapper {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.progress-bar {
+    margin-top: 13px;
+    display: flex;
+}
+
+.gone {
+    width: 60%;
+    border: 2px solid #FFFFFF;
+}
+
+.left {
+    width: 40%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.track-info {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+}
+
+.more__container__hidden {
+    display: none;
+}
+
+.player__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player__releases {
+    padding-top: 30px;
+    font-style: italic;
+    max-height: 104px;
+    position: relative;
+    overflow: scroll;
+}
+
+.player__releases_hidden {
+    display: none;
+}
+
+.player__text_hidden {
+    display: none;
+}
+
+.player__title {
+    margin: 0;
+    font-size: 16px;
+}
+
+.player__list {
+    font-size: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.player__release {
+    margin-top: 16px;
+}
+
+.switcher {
+    width: 135px;
+    height: 35px;
+    padding: auto;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: none;
+    margin-left: 20px;
+    color: white;
+    outline: none;
+}
