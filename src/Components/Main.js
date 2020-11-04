@@ -1,14 +1,13 @@
 import React from 'react';
-
+import '../blocks/turbina/turbina.css';   
 import Header  from './Header.js';
-import Turbina from './Turbina.js';
 
 
 const Main = () => {
     return (
         <div className="main">
             <Header/>
-            <Turbina/>
+            <div alt="turbina-logo" className="turbina"/>
         </div>
     )
 }
