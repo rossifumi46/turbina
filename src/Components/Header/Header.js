@@ -9,7 +9,7 @@ export default function Header() {
 
     return (
         <header className="header-container">
-            <a href="#" className="header__logo" ></a>
+            <a href="#" className="header__logo"></a>
             <div className="menu-container">
                 <button onClick={onClick} className="menu-trigger">
                     Стриминги

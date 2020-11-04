@@ -4,10 +4,10 @@
     border-bottom: 2px solid #000000;
     padding: 19px 0;
     color: #000000;
-    font-size: 10px;
+    font-size: 16px;
+    line-height: 20px;
     font-family: inherit;
-    margin: 0;
-    margin-top: 16px;
+    margin: 16px 0 0;
     outline: none;
 }
 
@@ -35,29 +35,27 @@ input[type="checkbox"] {
 }
 
 
-
 .invisible-checkbox:checked + .visible-checkbox {
-  width: 27px;
-  height: 27px;
-  border-radius: 50%;
-  background-color: black;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: black;
 }
 
 .invisible-checkbox:disabled + .visible-checkbox {
     border: 1px solid grey;
 }
 
-.invisible-checkbox:disabled:checked + .visible-checkbox  {
-  width: 27px;
-  height: 27px;
-  border-radius: 50%;
-  border: 2px solid black;
+.invisible-checkbox:disabled:checked + .visible-checkbox {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: 2px solid black;
 }
 
 .invisible-checkbox:focus + .visible-checkbox {
     box-shadow: 0 0 5px #fff6c5;
 }
-
 
 
 .checkbox {

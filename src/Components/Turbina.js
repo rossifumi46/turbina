@@ -5,7 +5,7 @@ import turbina from '../images/turbina.png';
 const Turbina = () => {
     return (
 
-           <img className="turbina" src={turbina}/>
+        <img alt="turbina-logo" className="turbina" src={turbina}/>
 
     )
 }

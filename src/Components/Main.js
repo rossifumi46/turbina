@@ -4,7 +4,6 @@ import Header  from './Header/Header.js';
 import Turbina from './Turbina.js';
 
 
-
 const Main = () => {
     return (
         <div className="main">

@@ -1,27 +1,27 @@
 .content {
-  background-color: #ffffff;
-  color: #000000;
-  padding-top: 64px;
-  padding-left: 58px;
-  padding-bottom: 86px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 10px;
-  top: -10px;
-  position: relative;
+    background-color: #ffffff;
+    color: #000000;
+    padding-top: 64px;
+    padding-left: 58px;
+    padding-bottom: 86px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    top: -10px;
+    position: relative;
 }
 
-.content__tesis-items {
-  list-style: none;
+.content__thesis-items {
+    list-style: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .content {
-    padding: 80px 20px;
-  }
+    .content {
+        padding: 80px 20px;
+    }
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  
+
 }

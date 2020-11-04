@@ -1,8 +1,7 @@
-
 @import url('./fonts/fonts.css');
 @import url('./blocks/root/root.css');
 @import url('./blocks/main/main.css');
-@import url('./blocks/main/turbina/turbina.css');
+@import url('blocks/turbina/turbina.css');
 @import url('./blocks/header/header.css');
 @import url('./blocks/header/__logo/header__logo.css');
 @import url('./blocks/header/__screencast/header__screencast.css');
@@ -18,7 +17,6 @@
 @import url("./blocks/content/__tesis-items/content__tesis-items.css");
 @import url("./blocks/content/__text/content__text.css");
 
-
 @import url('./blocks/form/form.css');
 @import url('./blocks/form/__input/form__input.css');
 @import url('./blocks/form/__input/_textarea/form__input_textarea.css');
@@ -29,9 +27,6 @@
 @import url('./blocks/form/__submit/form__submit.css');
 @import url('./blocks/form/__title/form__title.css');
 
-
 @import url('blocks/form/__input/form__input.css');
-
-
 
 @import url('./blocks/footer/footer.css');
