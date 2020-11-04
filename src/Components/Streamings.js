@@ -10,6 +10,8 @@ function Streamings() {
     setStreamingsBtnIsClicked(!streamingsBtnIsClicked);
   };
 
+
+
   return (
     <div className="streamings">
       <button className={`streamings__open-btn ${streamingsBtnIsClicked 
