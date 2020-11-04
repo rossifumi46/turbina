@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header  from './Header/Header.js';
+import Header  from './Header.js';
 import Turbina from './Turbina.js';
 
 
