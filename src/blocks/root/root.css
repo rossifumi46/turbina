@@ -1,10 +1,14 @@
 body {
     margin: 0;
+    background-color: #000;
+    border: darkgray 1px solid;
 }
 
 .root {
+    max-width: 1280px;
+    margin: 0 auto;
     font-family: Inter, Arial, sans-serif;
-    color: #ffffff;
+    color: #fff;
     background-color: #000000;
 }
 

@@ -1,0 +1,15 @@
+.player__button_type_play {
+		background-position: center;
+		background-image: url('../../../../../images/play.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: transparent;
+		border: none;
+		width: 20px;
+		height: 16px;
+		cursor: pointer;
+}
+
+.player__button_type_play {
+	outline: none;
+}

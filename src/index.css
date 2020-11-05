@@ -1,7 +1,7 @@
 @import url('./fonts/fonts.css');
 @import url('./blocks/root/root.css');
 @import url('./blocks/main/main.css');
-@import url('blocks/turbina/turbina.css');
+@import url('blocks/main/__logo/main__logo.css');
 @import url('./blocks/header/header.css');
 @import url('./blocks/header/__logo/header__logo.css');
 @import url('./blocks/header/__screencast/header__screencast.css');
@@ -34,3 +34,7 @@
 @import url('./blocks/streamings/streamings.css');
 
 @import url('./blocks/player/player.css');
+
+.body {
+	color: #000;
+}

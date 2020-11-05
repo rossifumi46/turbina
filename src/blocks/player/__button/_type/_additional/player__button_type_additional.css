@@ -1,0 +1,12 @@
+.player__button_type_additional {
+	background-position: center;
+	background-image: url('../../../../../images/more.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color:rgba(0, 0, 0, 0);
+	border: none;
+	margin-left: 20px;
+	width: 24px;
+	height: 24px;
+	outline: none;
+}

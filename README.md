@@ -1,4 +1,4 @@
-# Getting Started with Create React Header
+# Проект Турбина
 
 This project was bootstrapped with [Create React Header](https://github.com/facebook/create-react-app).
 
