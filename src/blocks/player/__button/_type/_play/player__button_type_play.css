@@ -1,13 +1,16 @@
 .player__button_type_play {
-		background-position: center;
-		background-image: url('../../../../../images/play.svg');
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-color: transparent;
-		border: none;
-		width: 20px;
-		height: 16px;
-		cursor: pointer;
+	background-position: center;
+	background-image: url('../../../../../images/play.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: transparent;
+	align-self: baseline;
+	border: none;
+	width: 20px;
+	height: 16px;
+	margin: 4px 0px;
+	/*padding: 0;*/
+	cursor: pointer;
 }
 
 .player__button_type_play {

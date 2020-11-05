@@ -1,40 +1,25 @@
-import React   from 'react';
-
-
-
+import React, {useState} from 'react';
+import { toggleMore, switcher } from './scripts.js'
 
 const Player = () => {
-    const releasesElement = document.querySelector('.player__releases');
-    const textElement = document.querySelector('.player__text');
-    const moreElement = document.querySelector('.player__container');
-    const moreBtn = document.querySelector('.player__button_type_additional');
+    function playerButtonSwitch () {
+        const playButton = document.querySelector('.player__button_type_play')
+        const pauseButton = document.querySelector('.player__button_type_pause')
 
-    function toggleMore() {
-
-        if (!moreElement.classList.contains('player__container_type_hidden')) {
-            releasesElement.classList.contains('player__releases_type_hidden') ?
-              textElement.classList.remоve('player__text_type_hidden') :
-              releasesElement.classList.add('player__releases_type_hidden')
-            }
-        else {
-            releasesElement.classList.toggle('player__releases_type_hidden');
+        if (playButton) {
+            playButton.classList.toggle("player__button_type_play");
+            playButton.classList.toggle("player__button_type_pause")
         }
-
-        moreElement.classList.toggle('player__container_type_hidden');
-
-        moreBtn.classList.toggle('player__button_type_hideplay');
-    }
-    function switcher() {
-        const releasesElement = document.querySelector('.player__releases');
-        const textElement = document.querySelector('.player__text');
-        textElement.classList.toggle('player__text_hidden');
-        releasesElement.classList.toggle('player__releases_hidden');
+        else if (pauseButton) {
+            pauseButton.classList.toggle("player__button_type_play");
+            pauseButton.classList.toggle("player__button_type_pause")
+        }
     }
 
     return (
         <div className="player">
            <div className="player__control">
-            <button className="player__button_type_play"/>
+            <button onClick={playerButtonSwitch} className="player__button_type_play"/>
                 <div className="player__wrapper">
                     <div className="player__row">
                         <p className="player__track-title">Контур — Хадн Дадн feat. Варя Карпова и Федя Быстров</p>

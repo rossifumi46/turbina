@@ -1,0 +1,13 @@
+.player__button_type_pause {
+	width: 20px;
+	height: 16px;
+	/*padding-left:  4px;*/
+	margin: 4px 0px;
+	background-image: url("../../../../../images/btn-pause.png");
+	background-repeat: no-repeat;
+	background-size: contain ;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
