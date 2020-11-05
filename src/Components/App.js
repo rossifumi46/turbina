@@ -4,11 +4,13 @@ import Content from "./Content.js";
 import Footer  from "./Footer.js";
 
 import "../index.css"
+import Player from "./Player";
 
 function App() {
     return (
         <div className="root">
             <Main/>
+            <Player/>
             <Content/>
             <Footer/>
 

@@ -1,0 +1,12 @@
+.player__button_type_switcher{
+	width: 135px;
+	height: 35px;
+	/*padding: auto;*/
+	border: 2px solid #fff;
+	box-sizing: border-box;
+	border-radius: 30px;
+	background: none;
+	margin-left: 20px;
+	color: white;
+	outline: none;
+}
