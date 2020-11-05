@@ -3,6 +3,7 @@
 @import "./__button/_type/_switcher/player__button_type_switcher.css";
 @import "./__releases/player__releases.css";
 @import "./__releases/_type/player__releases_type_hidden.css";
+@import "./__release/player__release.css";
 @import "./__title/player__title.css";
 @import "./__row/player__row.css";
 @import "./__list/player__list.css";
@@ -17,6 +18,7 @@
 @import "./__container/player__container.css";
 @import "./__lyrics/player__lyrics.css";
 @import "./__button/_type/_hideplay/player__button_type_hideplay.css";
+@import "./__button/_type/_pause/player__button_type_pause.css";
 
 
 .player__control {
@@ -34,7 +36,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 30px;
+    padding: 0px 25px 30px;
+    /*margin-bottom: 30px;*/
 }
 
 .player__track-title {
