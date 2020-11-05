@@ -8,12 +8,10 @@ import Player from "./Player";
 
 function App() {
     return (
-        <div className="root">
+        <div>
             <Main/>
-            <Player/>
             <Content/>
             <Footer/>
-
         </div>
     );
 }

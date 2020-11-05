@@ -1,6 +1,6 @@
 @import "./__button/_type/_play/player__button_type_play.css";
-@import "./__button/_type/_switcher/player__button_type_switcher.css";
 @import "./__button/_type/_additional/player__button_type_additional.css";
+@import "./__button/_type/_switcher/player__button_type_switcher.css";
 @import "./__releases/player__releases.css";
 @import "./__releases/_type/player__releases_type_hidden.css";
 @import "./__title/player__title.css";
@@ -12,16 +12,16 @@
 @import "./__wrapper/player__wrapper.css";
 @import "./__progressbar/player__progressbar.css";
 @import "./__progressbar/_type/player__progressbar_type_gone.css";
-@import "./__progressbar/_type/player__progressbar_type_gone.css";
+@import "./__progressbar/_type/player__progressbar_type_left.css";
 @import "./__container/_type/player__container_type_hidden.css";
 @import "./__container/player__container.css";
 @import "./__lyrics/player__lyrics.css";
 @import "./__button/_type/_hideplay/player__button_type_hideplay.css";
 
 
-/*.player__control {*/
-/*    display: flex;*/
-/*}*/
+.player__control {
+    display: flex;
+}
 
 
 /*.hide {*/
@@ -30,11 +30,18 @@
 
 
 
-.player{
+.player { 
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 44px;
-    padding-top: 187px;
-    
+    margin-bottom: 30px;
+}
+
+.player__track-title {
+    margin: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
 }
