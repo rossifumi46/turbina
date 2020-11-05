@@ -1,5 +1,5 @@
 .player__button_type_switcher{
-	width: 135px;
+	min-width: 135px;
 	height: 35px;
 	/*padding: auto;*/
 	border: 2px solid #fff;
@@ -9,4 +9,10 @@
 	margin-left: 20px;
 	color: white;
 	outline: none;
+	font-family: Inter;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
 }

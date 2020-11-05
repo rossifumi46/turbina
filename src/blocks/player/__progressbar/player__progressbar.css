@@ -1,4 +1,5 @@
-.progress-bar {
+.player__progressbar {
 	margin-top: 13px;
 	display: flex;
+	height: 0px;
 }
