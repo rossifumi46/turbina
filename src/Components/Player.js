@@ -42,7 +42,9 @@ const Player = () => {
                                 <li className="player__release">Лодка — СБПЧ feat. Маруся Романова</li>
                                 <li className="player__release">Лодка — СБПЧ feat. Маруся Романова</li>
                             </ul>
+
                         </div>
+
                         <div className="player__text player__text_type_hidden">
                             <h3 className="player__text-title">Текст</h3>
                             <p className="player__song-text">

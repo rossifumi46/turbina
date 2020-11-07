@@ -2,6 +2,8 @@
     height: 104px;
     overflow: scroll;
     margin-top: 30px;
+
+
 }
 
 @media screen and (max-width: 1024px) {
