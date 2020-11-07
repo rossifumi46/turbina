@@ -9,7 +9,7 @@ const Main = () => {
         <div className="main">
             <Header/>
             <img className="main__logo" alt="logo" src={turbina}/>
-            <Player/>
+
         </div>
     )
 }

@@ -52,6 +52,20 @@
 @import "./blocks/player/__song-text/player__song-text.css";
 @import "./blocks/player/__track-title/player__track-title.css";
 
+
+@import url('./blocks/streamings/__list/streamings__list.css');
+@import url('./blocks/streamings/__list/_type_mobile/streamings__list_type_mobile.css');
+@import url('./blocks/streamings/__link/streamings__link.css');
+@import url('./blocks/streamings/__list-item/streamings__list-item.css');
+@import url('./blocks/streamings/__open-btn/streamings__open-btn.css');
+@import url('./blocks/streamings/__open-btn/_is-cliked/streamings__open-btn_is-clicked.css');
+
+
+@import url('./blocks/about/__paragraph/about__paragraph.css');
+@import url('./blocks/about/__thesis/about__thesis.css');
+@import url('./blocks/about/__thesis/about__thesis.css');
+@import url('./blocks/about/__title/about__title.css');
+
 @import url('blocks/form/__input/form__input.css');
 
 @import url('./blocks/footer/footer.css');
