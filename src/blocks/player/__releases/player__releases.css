@@ -1,7 +1,3 @@
 .player__releases {
-	/*padding-top: 30px;*/
 	font-style: italic;
-	max-height: 104px;
-	position: relative;
-	overflow: scroll;
 }

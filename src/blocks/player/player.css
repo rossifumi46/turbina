@@ -19,32 +19,40 @@
 @import "./__lyrics/player__lyrics.css";
 @import "./__button/_type/_hideplay/player__button_type_hideplay.css";
 @import "./__button/_type/_pause/player__button_type_pause.css";
-
+@import "./__text-title/player__text-title.css";
+@import "./__song-text/player__song-text.css";
+@import "./__track-title/player__track-title.css";
 
 .player__control {
     display: flex;
 }
-
-
-/*.hide {*/
-/*    background-image: url('../../images/hide.svg');*/
-/*}*/
-
-
 
 .player { 
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 0px 25px 30px;
-    /*margin-bottom: 30px;*/
 }
 
-.player__track-title {
-    margin: 0;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .player {
+        padding: 0px 15px 30px;
+    }
+}
+
+.player__additional-container {
+    display: flex;
+}
+.player__info-container {
+    width: 100%;
+}
+
+@media screen and  (max-width: 767px) {
+    .player__additional-container {
+        flex-direction: column;
+    }
 }

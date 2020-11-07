@@ -1,3 +1,23 @@
 .player__container {
+  height: 104px;
+  overflow: scroll;
+  margin-top: 30px;
+}
 
+@media screen and (max-width: 1024px) {
+  .player__container {
+    height: 96px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .player__container {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .player__container {
+    margin-top: 28px;
+  }
 }

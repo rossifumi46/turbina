@@ -1,20 +1,20 @@
-.player__time-remaining {
-	margin: 0;
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 24px;
-	text-align: right;
+.player__text-title {
+  margin: 0;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 @media screen and (max-width: 1024px) {
-	.player__time-remaining {
+	.player__text-title {
 		font-size: 18px;
 		line-height: 22px;
 	}
 }
 
 @media screen and (max-width: 767px) {
-	.player__time-remaining {
+	.player__text-title {
 		font-size: 14px;
 		line-height: 19px;
 	}
