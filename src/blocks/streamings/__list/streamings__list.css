@@ -1,16 +1,15 @@
 .streamings__list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: 0;
-  padding: 0;
-  list-style: none
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none
 }
 
 @media screen and (max-width: 767px) {
-  .streamings__list {
-    transform: scaleY(0);
-    transition:transform .3s linear;
-    transform-origin: top;
-  }
+    .streamings__list {
+        transform: scaleX(0);
+
+    }
 }

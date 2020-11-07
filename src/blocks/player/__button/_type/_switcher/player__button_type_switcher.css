@@ -1,37 +1,37 @@
-.player__button_type_switcher{
-	min-width: 135px;
-	height: 35px;
-	border: 2px solid #fff;
-	box-sizing: border-box;
-	border-radius: 30px;
-	background: none;
-	margin-left: 20px;
-	color: white;
-	outline: none;
-	font-family: Inter;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 19px;
-	text-align: center;
+.player__button_type_switcher {
+    min-width: 135px;
+    height: 35px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: none;
+    margin-left: 20px;
+    color: white;
+    outline: none;
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
 }
 
 .player__button_type_switcher:hover {
-	font-style: italic;
+    font-style: italic;
 }
 
 @media screen and (max-width: 1024px) {
-	.player__button_type_switcher {
-		font-size: 15px;
-		line-height: 18px;
-	}
+    .player__button_type_switcher {
+        font-size: 15px;
+        line-height: 18px;
+    }
 }
 
 @media screen and  (max-width: 767px) {
-	.player__button_type_switcher {
-		margin: 0;
-		margin-top: 21px;
-		width: 100%;
-		font-size: 12px;
-		line-height: 15px;
-	}
+    .player__button_type_switcher {
+        margin: 0;
+        margin-top: 21px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 15px;
+    }
 }

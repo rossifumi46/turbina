@@ -8,17 +8,17 @@
 }
 
 @media screen and (max-width: 1279px) {
-	.form__title {
-		font-size: 46px;
+    .form__title {
+        font-size: 46px;
         line-height: 56px;
-	}
+    }
 }
 
 @media screen and (max-width: 1023px) {
-	.form__title {
-		font-size: 42px;
-		line-height: 51px;
-	}
+    .form__title {
+        font-size: 42px;
+        line-height: 51px;
+    }
 }
 
 @media screen and (max-width: 767px) {

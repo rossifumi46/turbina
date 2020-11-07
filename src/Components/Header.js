@@ -1,4 +1,4 @@
-import React from "react";
+import React     from "react";
 import Streaming from "./Streamings";
 import './Header/menu.css'
 

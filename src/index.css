@@ -27,6 +27,31 @@
 @import url('./blocks/form/__submit/form__submit.css');
 @import url('./blocks/form/__title/form__title.css');
 
+@import "./blocks/player/__button/_type/_play/player__button_type_play.css";
+@import "./blocks/player/__button/_type/_additional/player__button_type_additional.css";
+@import "./blocks/player/__button/_type/_switcher/player__button_type_switcher.css";
+@import "./blocks/player/__releases/player__releases.css";
+@import "./blocks/player/__releases/_type/player__releases_type_hidden.css";
+@import "./blocks/player/__release/player__release.css";
+@import "./blocks/player/__title/player__title.css";
+@import "./blocks/player/__row/player__row.css";
+@import "./blocks/player/__list/player__list.css";
+@import "./blocks/player/__text/_type/player__text_type_hidden.css";
+@import "./blocks/player/__text/player__text.css";
+@import "./blocks/player/__time-remaining/player__time-remaining.css";
+@import "./blocks/player/__wrapper/player__wrapper.css";
+@import "./blocks/player/__progressbar/player__progressbar.css";
+@import "./blocks/player/__progressbar/_type/player__progressbar_type_gone.css";
+@import "./blocks/player/__progressbar/_type/player__progressbar_type_left.css";
+@import "./blocks/player/__container/_type/player__container_type_hidden.css";
+@import "./blocks/player/__container/player__container.css";
+@import "./blocks/player/__lyrics/player__lyrics.css";
+@import "./blocks/player/__button/_type/_hideplay/player__button_type_hideplay.css";
+@import "./blocks/player/__button/_type/_pause/player__button_type_pause.css";
+@import "./blocks/player/__text-title/player__text-title.css";
+@import "./blocks/player/__song-text/player__song-text.css";
+@import "./blocks/player/__track-title/player__track-title.css";
+
 @import url('blocks/form/__input/form__input.css');
 
 @import url('./blocks/footer/footer.css');
@@ -36,5 +61,5 @@
 @import url('./blocks/player/player.css');
 
 .body {
-	color: #000;
+    color: #000;
 }

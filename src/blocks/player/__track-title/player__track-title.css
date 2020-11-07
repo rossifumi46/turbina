@@ -1,24 +1,24 @@
 .player__track-title {
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 24px;
-	margin: 0px;
-	overflow: hidden;
-	max-height: 24px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0px;
+    overflow: hidden;
+    max-height: 24px;
 }
 
 @media screen and (max-width: 1024px) {
-	.player__track-title {
-		font-size: 18px;
-		line-height: 22px;
-		max-height: 22px;
-	}
+    .player__track-title {
+        font-size: 18px;
+        line-height: 22px;
+        max-height: 22px;
+    }
 }
 
 @media screen and (max-width: 767px) {
-	.player__track-title {
-		font-size: 14px;
-		line-height: 19px;
-		max-height: 19px;
-	}
+    .player__track-title {
+        font-size: 14px;
+        line-height: 19px;
+        max-height: 19px;
+    }
 }

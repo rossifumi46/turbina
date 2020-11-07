@@ -1,18 +1,18 @@
 .streamings__list-item {
-  margin-bottom: 8px;
-  transition: opacity .1s linear;
+    margin-bottom: 8px;
+    transition: opacity .1s linear;
 }
 
 .streamings__list-item:nth-last-child(1) {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .streamings__list-item:hover {
-  opacity: .6;
+    opacity: .6;
 }
 
 @media (max-width: 320px) {
-  .streamings__list-item {
-    margin-bottom: 6px;
-  }
+    .streamings__list-item {
+        margin-bottom: 6px;
+    }
 }
