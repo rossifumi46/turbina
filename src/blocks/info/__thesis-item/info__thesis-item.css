@@ -5,3 +5,9 @@
 .info__thesis-item:first-of-type {
     margin-top: 0;
 }
+
+@media screen and (max-width: 1024px) {
+    .info__thesis-item {
+        margin-top: 14px;
+    }
+}

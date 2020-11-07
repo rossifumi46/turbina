@@ -11,6 +11,10 @@
     outline: none;
 }
 
+.form__input:first-of-type {
+    margin-top: 0;
+}
+
 .form__input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(0, 0, 0, 0.4);
     opacity: 1; /* Firefox */
@@ -62,3 +66,16 @@ input[type="checkbox"] {
     margin-top: 34px;
 }
 
+@media screen and (max-width: 767px) {
+    .form__input {
+        font-size: 14px;
+        line-height: 39px;
+        margin-top: 6px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .form__input {
+        margin-top: 10px;
+    }
+}

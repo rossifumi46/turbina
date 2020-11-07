@@ -21,13 +21,18 @@ const Player = () => {
            <div className="player__control">
             <button onClick={playerButtonSwitch} className="player__button_type_play"/>
                 <div className="player__wrapper">
-                    <div className="player__row">
-                        <p className="player__track-title">Контур — Хадн Дадн feat. Варя Карпова и Федя Быстров</p>
-                        <p className="player__time-remaining">2:24</p>
-                    </div>
-                    <div className="player__progressbar">
-                        <div className="player__progressbar_type_gone"></div>
-                        <div className="player__progressbar_type_left"></div>
+                    <div className="player__additional-container">
+                        <div className="player__info-container">
+                            <div className="player__row">
+                                <p className="player__track-title">Контур — Хадн Дадн feat. Варя Карпова и Федя Быстров</p>
+                                <p className="player__time-remaining">2:24</p>
+                            </div>
+                            <div className="player__progressbar">
+                                <div className="player__progressbar_type_gone"></div>
+                                <div className="player__progressbar_type_left"></div>
+                            </div>
+                        </div>
+                        <button className="player__button_type_switcher hidden" onClick={switcher}>Текст песни</button>
                     </div>
                     <div className="player__container player__container_type_hidden">
                         <div className="player__releases player__releases_type_hidden">
@@ -46,11 +51,8 @@ const Player = () => {
                                 Никогда не знаешь, что будет дальше
                             </p>
                         </div>
-                    </div>
-                    
+                    </div>         
                 </div>
-
-                <button className="player__button_type_switcher" onClick={switcher}>Текст песни</button>
                 <button className="player__button_type_additional" onClick={toggleMore}></button>
            </div>
         </div>

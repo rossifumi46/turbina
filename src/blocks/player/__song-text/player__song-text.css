@@ -1,0 +1,23 @@
+.player__song-text {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+	.player__song-text {
+		font-size: 18px;
+    line-height: 22px;
+    margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.player__song-text {
+		font-size: 14px;
+    line-height: 19px;
+    margin-top: 10px;
+	}
+}

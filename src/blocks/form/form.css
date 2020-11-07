@@ -4,8 +4,20 @@
     margin-top: 100px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+    .form {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
     .form {
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form {
+        margin-top: 60px;
     }
 }

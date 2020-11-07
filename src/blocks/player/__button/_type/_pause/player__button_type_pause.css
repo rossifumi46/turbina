@@ -11,3 +11,17 @@
 	cursor: pointer;
 	outline: none;
 }
+
+@media screen and (max-width: 767px) {
+	.player__button_type_pause {
+		width: 18px;
+		height: 15px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.player__button_type_pause {
+		width: 16px;
+		height: 13px;
+	}
+}
