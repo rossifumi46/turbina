@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 767px) {
     .streamings__link {
-        padding: 5px 16px;
+        padding: 5px 15px;
         font-size: 12px;
         line-height: 15px;
     }

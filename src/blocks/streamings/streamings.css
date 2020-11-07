@@ -1,15 +1,19 @@
-@import url('./__list/streamings__list.css');
-@import url('__list/_type_mobile/streamings__list_type_mobile.css');
-@import url('./__link/streamings__link.css');
-@import url('./__list-item/streamings__list-item.css');
-@import url('__open-btn/streamings__open-btn.css');
-@import url('__open-btn/_is-cliked/streamings__open-btn_is-clicked.css');
 
 .streamings {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: 0;
+    margin-top: 15px;
+    margin-right: 15px;
     padding: 0;
     height: 200px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .streamings {
+        margin-top: 13px;
+        margin-right: 13px;
+
+    }
 }

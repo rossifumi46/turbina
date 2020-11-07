@@ -1,7 +1,8 @@
 .streamings__open-btn_isClicked {
     border-radius: 50%;
-    width: 31px;
-    height: 33px;
+
+    width: 29px;
+    height: 29px;
     padding-bottom: 3px;
     background: url('../../../../images/streamings-cls-btn.svg') no-repeat center;
 }
