@@ -7,15 +7,18 @@
 }
 
 .footer__copyright {
+    font-family: 'Inter', Helvetica, Arial, serif;
     margin: 0;
 }
 
 .footer__author {
+    font-family: 'Inter', Helvetica, Arial, serif;
     margin: 0;
 }
 
 .footer__link {
-    color: #FFFFFF;
+    font-family: 'Inter', Helvetica, Arial, serif;
+    color: #FFF;
     text-underline-position: under;
     cursor: pointer;
 }

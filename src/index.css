@@ -1,7 +1,9 @@
 @import url('./fonts/fonts.css');
 @import url('./blocks/root/root.css');
+
 @import url('./blocks/main/main.css');
 @import url('blocks/main/__logo/main__logo.css');
+
 @import url('./blocks/header/header.css');
 @import url('./blocks/header/__logo/header__logo.css');
 @import url('./blocks/header/__screencast/header__screencast.css');
@@ -41,8 +43,8 @@
 @import "./blocks/player/__time-remaining/player__time-remaining.css";
 @import "./blocks/player/__wrapper/player__wrapper.css";
 @import "./blocks/player/__progressbar/player__progressbar.css";
-@import "./blocks/player/__progressbar/_type/player__progressbar_type_gone.css";
-@import "./blocks/player/__progressbar/_type/player__progressbar_type_left.css";
+@import "./blocks/player/__progressbar/__progressbar-gone/player__progressbar-gone.css";
+@import "./blocks/player/__progressbar/__progressbar-left/player__progressbar-left.css";
 @import "./blocks/player/__container/_type/player__container_type_hidden.css";
 @import "./blocks/player/__container/player__container.css";
 @import "./blocks/player/__lyrics/player__lyrics.css";
@@ -78,4 +80,10 @@
 
 .body {
     color: #000;
+    margin: 0;
+    background-image: url("./images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }

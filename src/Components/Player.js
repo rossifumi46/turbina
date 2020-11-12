@@ -1,4 +1,4 @@
-import React                  from 'react';
+import React from 'react';
 import {switcher, toggleMore} from './scripts.js'
 
 const Player = () => {
@@ -18,7 +18,7 @@ const Player = () => {
     return (
         <div className="player">
             <div className="player__control">
-                <button onClick={playerButtonSwitch} className="player__button_type_play"/>
+                <button onClick={playerButtonSwitch} className="player__button player__button_type_play"/>
                 <div className="player__wrapper">
                     <div className="player__additional-container">
                         <div className="player__info-container">
@@ -28,11 +28,11 @@ const Player = () => {
                                 <p className="player__time-remaining">2:24</p>
                             </div>
                             <div className="player__progressbar">
-                                <div className="player__progressbar_type_gone"></div>
-                                <div className="player__progressbar_type_left"></div>
+                                <div className="player__progressbar-gone"></div>
+                                <div className="player__progressbar-left"></div>
                             </div>
                         </div>
-                        <button className="player__button_type_switcher hidden" onClick={switcher}>Текст песни</button>
+                        <button className="player__button player__button_type_switcher hidden" onClick={switcher}>Текст песни</button>
                     </div>
                     <div className="player__container player__container_type_hidden">
                         <div className="player__releases player__releases_type_hidden">
@@ -55,7 +55,7 @@ const Player = () => {
                         </div>
                     </div>
                 </div>
-                <button className="player__button_type_additional" onClick={toggleMore}></button>
+                <button className="player__button player__button_type_additional" onClick={toggleMore}></button>
             </div>
         </div>
     )
