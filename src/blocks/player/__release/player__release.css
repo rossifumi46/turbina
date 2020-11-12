@@ -16,6 +16,7 @@
 
 @media screen and (max-width: 767px) {
     .player__release {
+        font-family: 'Inter', Helvetica, Arial, serif;
         font-size: 14px;
         line-height: 19px;
         margin-top: 10px;

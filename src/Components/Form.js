@@ -6,18 +6,17 @@ const Form = () => {
         <div className="form">
             <h2 className="form__title">Форма</h2>
             <p className="form__ps">Заполняя эту форму, вы становитесь частью проекта.</p>
-            <form action="submit">
+            <form>
                 <div className="form__inputs">
                     <input className="form__input" type="text" placeholder="Имя и фамилия автора" required/>
                     <input className="form__input" type="email" placeholder="Почта" required/>
                     <input className="form__input" type="tel" placeholder="Телефон"/>
-                    <textarea className="form__input form__input_textarea" type="textarea"
-                              placeholder="Стихи"></textarea>
+                    <textarea className="form__input form__input_textarea" placeholder="Стихи"></textarea>
                 </div>
-                <div className="checkbox">
+                <div className="form__checkbox">
                     <label>
-                        <input id="1" className="invisible-checkbox" type="checkbox"/>
-                        <span className="visible-checkbox"></span>
+                        <input id="1" className="form__invisible-checkbox" type="checkbox"/>
+                        <span className="form__visible-checkbox"></span>
                         <span className="form__label-text">Согласен с <a className="form__label-text_link"
                                                                          href="#">офертой</a></span>
                     </label>
