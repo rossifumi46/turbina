@@ -1,4 +1,4 @@
-.player__button_type_additional {
+.player__button_type_more {
     background-position: center;
     background-image: url('../../../../../images/more.svg');
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .player__button_type_additional {
+    .player__button_type_more {
         margin: 2px 11px 2px;
         width: 16px;
         height: 16px;

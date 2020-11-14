@@ -1,0 +1,14 @@
+.player__button_type_clip {
+  background-color: #FFF;
+  color: #000;
+  border-radius: 30px;
+  height: 35px;
+  border: none;
+  display: flex;
+  padding: 11px 14px;
+}
+
+.player__play-clip {
+  width: 9px;
+  height: 7px;
+}

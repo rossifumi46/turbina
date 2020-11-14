@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import SvgStreamingsClsBtn from './SvgStreamingsClsBtn.js'
 
 function Streamings() {
 
@@ -13,9 +14,12 @@ function Streamings() {
 
     return (
         <div className="streamings">
-            <button className={`streamings__open-btn ${streamingsBtnIsClicked
-                ? 'streamings__open-btn_isClicked' : ''}`}
-                    onClick={handleBtnClick}>{streamingsBtnIsClicked ? '' : 'Стриминги'}</button>
+            <button className="streamings__open-btn" 
+                    onClick={handleBtnClick}>
+                {streamingsBtnIsClicked ? <SvgStreamingsClsBtn/> : 'Стриминги'}
+            </button>
+
+            
 
             <ul className={`streamings__list ${streamingsIsOpen ? '' : 'streamings__list_type_mobile'}`}>
                 <li className="streamings__list-item">

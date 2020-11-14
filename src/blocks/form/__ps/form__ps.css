@@ -1,7 +1,13 @@
 .form__ps {
     font-family: 'Inter', Helvetica, Arial, serif;
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+    .form__ps {
+        margin-bottom: 60px;
+    }
 }
 
 @media screen and (max-width: 767px) {
