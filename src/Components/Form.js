@@ -3,33 +3,6 @@ import { Formik } from 'formik';
 
 const Form = () => {
 
-    // const body = JSON.stringify({
-    //     name,
-    //     link
-    //   })
-
-    // function handleSubmit(event) {
-    //     event.preventDefault()
-
-    //     fetch(baseUrl, {
-    //         method: 'POST',
-    //         headers,
-    //         body
-    //       })
-    //         .then(res => {
-    //           if (res.ok) {
-    //             return res.json();
-    //           }
-              
-    //           // если ошибка, отклоняем промис
-    //           console.log(res.err);
-    //           return Promise.reject(`Ошибка: ${res.status}`);
-    //         })
-    //         .then(res => {
-
-    //         }
-    // }
-
     return (
         <div className="form">
             <h2 className="form__title">Форма</h2>

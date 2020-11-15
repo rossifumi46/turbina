@@ -1,8 +1,8 @@
 import * as React from "react";
 
-function SvgStreamingsClsBtn(props) {
+function SvgStreamingsClsBtn() {
   return (
-    <svg width="1em" height="1em" viewBox="0 0 19 19" fill="none" {...props}>
+    <svg className="streamings__svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
       <path
         stroke="#fff"
         strokeWidth={2}
