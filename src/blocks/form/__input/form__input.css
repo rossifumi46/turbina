@@ -21,6 +21,12 @@
     font-family: inherit;
 }
 
+
+.form__input_error {
+    color: #FF0000;
+    border-bottom-color: #FF0000;
+}
+
 input[type="checkbox"] {
     appearance: none;
 }

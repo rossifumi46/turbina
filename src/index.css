@@ -28,6 +28,7 @@
 @import url('./blocks/form/__ps/form__ps.css');
 @import url('./blocks/form/__submit/form__submit.css');
 @import url('./blocks/form/__title/form__title.css');
+@import './blocks/form/__error/form__error.css';
 
 @import './blocks/player/__buttons/player__buttons.css';
 @import './blocks/player/__button/_type/_clip/player__button_type_clip.css';
