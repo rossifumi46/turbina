@@ -7,7 +7,7 @@
     font-size: 16px;
     line-height: 20px;
     font-family: 'Inter', Helvetica, Arial, serif;
-    margin: 16px 0 0;
+    margin: 10px 0 0;
     outline: none;
 }
 
@@ -21,6 +21,12 @@
     font-family: inherit;
 }
 
+
+.form__input_error {
+    color: #FF0000;
+    border-bottom-color: #FF0000;
+}
+
 input[type="checkbox"] {
     appearance: none;
 }
@@ -28,8 +34,8 @@ input[type="checkbox"] {
 .form__visible-checkbox {
     display: inline-block;
     vertical-align: middle;
-    width: 27px;
-    height: 27px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     border: 2px solid black;
     box-sizing: border-box;
@@ -61,13 +67,12 @@ input[type="checkbox"] {
 
 
 .form__checkbox {
-    margin-top: 34px;
+    margin-top: 40px;
 }
 
 @media screen and (max-width: 767px) {
     .form__input {
         font-size: 14px;
-        line-height: 39px;
         margin-top: 6px;
     }
 }

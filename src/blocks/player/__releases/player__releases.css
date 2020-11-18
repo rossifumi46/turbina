@@ -1,9 +1,4 @@
 .player__releases {
-    font-style: italic;
-}
-
-
-.player__releases {
     animation-name: slideDown;
     animation-duration: 1s;
     animation-timing-function: ease;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header.js';
-import Player from './Player.js';
+import Player from './player/Player.js';
 
 
 const Main = () => {
