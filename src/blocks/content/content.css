@@ -1,0 +1,22 @@
+.content {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 110px 50px;
+    margin: 0 10px;
+    border-radius: 10px;
+    top: -10px;
+    position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+    .content {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        margin: 0 5px;
+        padding: 80px 20px;
+    }
+}

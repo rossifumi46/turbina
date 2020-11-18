@@ -1,0 +1,30 @@
+.form__submit {
+    font-family: 'Inter', Helvetica, Arial, serif;
+    line-height: 20px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 100%;
+    background: none;
+    margin-top: 84px;
+    cursor: pointer;
+    padding: 18px 25px;
+    font-size: inherit;
+}
+
+.form__submit:hover {
+    font-style: italic;
+}
+
+@media screen and (max-width: 1024px) {
+    .form__submit {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form__submit {
+        padding: 9px 20px;
+    }
+}
+

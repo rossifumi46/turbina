@@ -1,0 +1,10 @@
+.streamings__open-btn_is-clicked {
+    border-radius: 50%;
+    height: 29px;
+    width: 29px;
+    padding: 0;
+}
+
+.streamings__svg {
+    vertical-align: middle;
+}

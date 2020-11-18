@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('./fonts/fonts.css');
+@import url('./blocks/root/root.css');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('./blocks/main/main.css');
+@import url('blocks/main/__logo/main__logo.css');
+
+@import url('./blocks/header/header.css');
+@import url('./blocks/header/__logo/header__logo.css');
+@import url('./blocks/header/__screencast/header__screencast.css');
+
+@import url("./blocks/info/info.css");
+@import url("./blocks/info/__paragraph/info__paragraph.css");
+@import url("./blocks/info/__thesis-item/info__thesis-item.css");
+@import url("./blocks/info/__thesis-items/info__thesis-items.css");
+@import url("./blocks/info/__title/info__title.css");
+
+@import url("./blocks/content/content.css");
+@import url("./blocks/content/__title/content__title.css");
+@import url("./blocks/content/__tesis-items/content__tesis-items.css");
+@import url("./blocks/content/__text/content__text.css");
+
+@import url('./blocks/form/form.css');
+@import url('./blocks/form/__input/form__input.css');
+@import url('./blocks/form/__input/_textarea/form__input_textarea.css');
+@import url('./blocks/form/__inputs/form__inputs.css');
+@import url('./blocks/form/__label-text/form__label-text.css');
+@import url('./blocks/form/__label-text/_link/form__label-text_link.css');
+@import url('./blocks/form/__ps/form__ps.css');
+@import url('./blocks/form/__submit/form__submit.css');
+@import url('./blocks/form/__title/form__title.css');
+@import './blocks/form/__error/form__error.css';
+
+@import './blocks/player/__buttons/player__buttons.css';
+@import './blocks/player/__button/_type/_clip/player__button_type_clip.css';
+@import "./blocks/player/__button/_type/_play/player__button_type_play.css";
+@import "./blocks/player/__button/_type/_more/player__button_type_more.css";
+@import "./blocks/player/__button/_type/_switcher/player__button_type_switcher.css";
+@import "./blocks/player/__releases/player__releases.css";
+@import "./blocks/player/__release/player__release.css";
+@import "./blocks/player/__title/player__title.css";
+@import "./blocks/player/__row/player__row.css";
+@import "./blocks/player/__list/player__list.css";
+@import "./blocks/player/__text/player__text.css";
+@import "./blocks/player/__time-remaining/player__time-remaining.css";
+@import "./blocks/player/__wrapper/player__wrapper.css";
+@import "./blocks/player/__progressbar/player__progressbar.css";
+@import "./blocks/player/__progressbar/__progressbar-gone/player__progressbar-gone.css";
+@import "./blocks/player/__progressbar/__progressbar-left/player__progressbar-left.css";
+@import "./blocks/player/__container/player__container.css";
+@import "./blocks/player/__lyrics/player__lyrics.css";
+@import "./blocks/player/__button/_type/_hideplay/player__button_type_hideplay.css";
+@import "./blocks/player/__button/_type/_pause/player__button_type_pause.css";
+@import "./blocks/player/__text-title/player__text-title.css";
+@import "./blocks/player/__song-text/player__song-text.css";
+@import "./blocks/player/__track-title/player__track-title.css";
+
+
+
+@import url('./blocks/about/__paragraph/about__paragraph.css');
+@import url('./blocks/about/__thesis/about__thesis.css');
+@import url('./blocks/about/__thesis/about__thesis.css');
+@import url('./blocks/about/__title/about__title.css');
+
+
+@import url('./blocks/streamings/__list/streamings__list.css');
+@import url('./blocks/streamings/__list/_type_mobile/streamings__list_type_mobile.css');
+@import url('./blocks/streamings/__link/streamings__link.css');
+@import url('./blocks/streamings/__list-item/streamings__list-item.css');
+@import url('./blocks/streamings/__open-btn/streamings__open-btn.css');
+@import url('./blocks/streamings/__open-btn/_is-cliked/streamings__open-btn_is-clicked.css');
+
+
+@import url('blocks/form/__input/form__input.css');
+
+@import url('./blocks/footer/footer.css');
+
+@import url('./blocks/streamings/streamings.css');
+
+@import url('./blocks/player/player.css');
+
+@import './blocks/hidden/hidden.css';
+
+.body {
+    color: #000;
+    margin: 0;
+    background-image: url("./images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }

@@ -1,0 +1,17 @@
+.info__thesis-items {
+    list-style-position: inside;
+    padding: 0;
+    margin: 44px 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .info__thesis-items {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .info__thesis-items {
+        margin-top: 30px;
+    }
+}

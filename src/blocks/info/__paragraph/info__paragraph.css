@@ -1,0 +1,21 @@
+.info__paragraph {
+    margin: 40px 0 0;
+    font-family: 'Inter', Helvetica, Arial, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: inherit;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 1024px) {
+    .info__paragraph {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .info__paragraph {
+        margin-top: 30px;
+        line-height: 16px;
+    }
+}

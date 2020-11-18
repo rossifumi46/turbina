@@ -1,0 +1,34 @@
+.player__release {
+    margin-top: 16px;
+    font-family: 'Inter', Helvetica, Arial, serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.player__release_active {
+    font-weight: 500;
+}
+
+.player__release:hover {
+    font-style: italic;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+    .player__release {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .player__release {
+        font-family: 'Inter', Helvetica, Arial, serif;
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 10px;
+    }
+}

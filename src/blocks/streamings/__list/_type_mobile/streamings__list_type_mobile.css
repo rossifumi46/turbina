@@ -1,0 +1,20 @@
+
+.streamings__list_type_mobile {
+    transform: scaleX(1);
+    animation: growDown 700ms ease;
+    transform-origin: right;
+
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleX(0)
+    }
+    80% {
+        transform: scaleX(1.1)
+    }
+    100% {
+        transform: scaleX(1)
+    }
+}
+

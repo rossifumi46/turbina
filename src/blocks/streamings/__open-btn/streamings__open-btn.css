@@ -1,0 +1,32 @@
+.streamings__open-btn {
+    display: none;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 6px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background-color: transparent;
+    font-family: 'Inter', Helvetica, Arial, serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+
+
+}
+
+.streamings__open-btn:hover {
+    opacity: .6;
+}
+
+.streamings__open-btn:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 767px) {
+    .streamings__open-btn {
+        display: inline-block;
+
+    }
+
+
+}
