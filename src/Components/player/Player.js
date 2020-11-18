@@ -1,18 +1,28 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import { useMediaQuery } from 'react-responsive'
 
-import coverImg from '../images/cover.png'
-import playImg from '../images/play-clip.png'
+import PlayerTimeLine from './PlayerTimeLine'
+import PlayerItem from './PlayerItem'
+import throttling from '../../utils/throttlings'
+import playlist from './playlist'
+import coverImg from '../../images/cover.png'
+import playImg from '../../images/play-clip.png'
+
 
 const classNames = require('classnames');
 
 const Player = () => {
-    const [moreContainerIsOpen, setMoreContainerIsOpen] = useState(false)
-    const [btnsIsActive, setBtnIsActive] = useState(false)
-    const [coverIsHidden, setCoverIsHidden] = useState(true)
-    const [isTextActive, setIsTextActive] = useState(false)
-    const [switchBtnText, setSwitchBtnText] = useState('Текст песни')
-    const [ playerState, setPlayerSate ] = useState(false)
+    
+
+    const [ moreContainerIsOpen, setMoreContainerIsOpen] = useState(false)
+    const [ btnsIsActive, setBtnIsActive] = useState(false)
+    const [ coverIsHidden, setCoverIsHidden] = useState(true)
+    const [ isTextActive, setIsTextActive] = useState(false)
+    const [ switchBtnText, setSwitchBtnText] = useState('Текст песни')
+    const [ isPlaying, setIsPlaying ] = useState(false)
+    const [leftTime, setLeftTime] = useState(0)
+    const [duration, setDuration] = useState(0)
+    
 
     const isMobile = useMediaQuery({ query: '(max-width: 767px)' })
 
@@ -41,7 +51,14 @@ const Player = () => {
         setSwitchBtnText(!isTextActive ? 'Релизы' : 'Текст песни')
     }
 
-    const playerButtonSwitch = () => { setPlayerSate(!playerState) }
+    const playerButtonSwitch = () => {
+        if (isPlaying) {
+            myPlayer.current.pause()
+        } else {
+            myPlayer.current.play()
+        }
+        setIsPlaying(!isPlaying)   
+    }
 
     const releasesClass = classNames('player__releases', {
         'hidden': isTextActive
@@ -52,31 +69,52 @@ const Player = () => {
     })
 
     const playerClass = classNames('player__button', {
-        'player__button_type_play': !playerState,
-        'player__button_type_pause': playerState
+        'player__button_type_play': !isPlaying,
+        'player__button_type_pause': isPlaying
     })
 
     const moreBtnClass = classNames('player__button player__button_type_more', {
         'player__button_type_hideplay': moreContainerIsOpen
     })
 
+    const [currentTrack, setCurrentTrack] = useState(playlist[0])
+    
+
+    const onTimeUpdate = throttling(e => {
+        setLeftTime(e.target.duration - e.target.currentTime)
+    }, 1000)
+
+    const onPlay = e => {
+        setDuration(e.target.duration)
+    }
+    const myPlayer = useRef(null)
     return (
         <div className="player">
             {!isMobile && cover}
             <div className="player__control">
+                <audio src={currentTrack.file}
+                    ref={myPlayer}
+                    onTimeUpdate={onTimeUpdate}
+                    // onPause
+                    onPlay={onPlay}
+                    onLoadedData={_ => {
+                        setLeftTime(myPlayer.current.duration);
+                        setDuration(myPlayer.current.duration);
+                    }}
+                />
                 <button onClick={playerButtonSwitch} className={playerClass}/>
                 <div className="player__wrapper">
                     <div className="player__additional-container">
                         <div className="player__info-container">
                             <div className="player__row">
-                                <p className="player__track-title">Контур — Хадн Дадн feat. Варя Карпова и Федя
-                                    Быстров</p>
-                                <p className="player__time-remaining">2:24</p>
+                                <p className="player__track-title">{currentTrack.title} - {currentTrack.artist}</p>
+                                <p className="player__time-remaining">{Math.floor(leftTime/60)}:{Math.floor(leftTime%60)}</p>
                             </div>
-                            <div className="player__progressbar">
-                                <div className="player__progressbar-gone"></div>
-                                <div className="player__progressbar-left"></div>
-                            </div>
+                            <PlayerTimeLine 
+                                leftTime={leftTime}
+                                duration={duration}
+                                onCLick={timeToGo => myPlayer.current.currentTime = timeToGo}
+                            />
                         </div>
                         {isMobile && cover}
                         <div className={btnsClass}>
@@ -89,9 +127,13 @@ const Player = () => {
                         <div className={releasesClass}>
                             <h3 className="player__title">Релизы:</h3>
                             <ul className="player__list">
-                                <li className="player__release player__release_active">Лодка — СБПЧ feat. Маруся Романова</li>
-                                <li className="player__release">Лодка — СБПЧ feat. Маруся Романова</li>
-                                <li className="player__release">Лодка — СБПЧ feat. Маруся Романова</li>
+                                {playlist.map(item => <PlayerItem 
+                                    item={item}
+                                    onClick={item => {
+                                        setCurrentTrack(item)
+                                        setIsPlaying(false)         
+                                    }}
+                                />)}
                             </ul>
 
                         </div>
