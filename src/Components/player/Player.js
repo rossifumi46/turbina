@@ -1,16 +1,20 @@
 import React, {useState, useRef} from 'react'
-
 import PlayerTimeLine from './PlayerTimeLine'
 import throttling from '../../utils/throttlings'
 import playlist from './playlist'
 import playImg from '../../images/play-clip.png'
-
+import { useMediaQuery } from 'react-responsive'
 
 const classNames = require('classnames');
 
-const Player = ({isPlayerExtend, onPlayerExtend}) => {
+const Player = (props) => {
+    const isMobile = useMediaQuery({ query: '(max-width: 480px)' });
+    const isShortMobile = useMediaQuery({ query: '(max-width: 480px) and (max-height: 550px)' })
+    const isTallMobile = useMediaQuery({ query: '(max-width: 480px) and (min-height: 551px)' })
+    const isWideMobile = useMediaQuery({ query: '(max-width: 600px)' })
+    const isNarrowDesktop = useMediaQuery({ query: '(max-width: 1024px)' })
 
-    // const [ moreContainerIsOpen, setMoreContainerIsOpen] = useState(false)
+    const [isPlayerExtend, setPlayerState] = useState(false)
     const [ btnsIsActive, setBtnIsActive] = useState(false)
     const [ isTextActive, setIsTextActive] = useState(false)
     const [ switchBtnText, setSwitchBtnText] = useState('Текст песни')
@@ -27,10 +31,34 @@ const Player = ({isPlayerExtend, onPlayerExtend}) => {
 
     const cover = <img src={currentTrack.cover} alt="" className={coverClass}/>
 
-    const handleMoreClick = () => {
-        onPlayerExtend()
+    const calcDefaultHeight = () => {
+        switch (true) {
+            case isTallMobile || isShortMobile:
+            return "35px"
+            case isWideMobile || isNarrowDesktop:
+            return "38px"
+            default:
+            return "42px"
+        }
+    };
+    
+    const calcExtendedHeight = () => {
+        switch (true) {
+            case isTallMobile:
+            return '466px'
+            case isShortMobile:
+            return '380px'
+            case isWideMobile:
+            return '220px'
+            case isNarrowDesktop:
+            return '170px'
+            default:
+            return '186px'
+        }
+    };
 
-        // setMoreContainerIsOpen(!moreContainerIsOpen)
+    const handleMoreClick = () => {
+        setPlayerState(!isPlayerExtend)
         setBtnIsActive(!btnsIsActive)
     }
 
@@ -76,7 +104,7 @@ const Player = ({isPlayerExtend, onPlayerExtend}) => {
 
 
     return (
-        <div className="player" style={{height: isPlayerExtend ? '186px' : '42px'}}>
+        <div className="player" style={{height: isPlayerExtend ? calcExtendedHeight() + 30 : calcDefaultHeight() + 30 }}>
             <audio src={currentTrack.file}
                 ref={myPlayer}
                 onTimeUpdate={onTimeUpdate}
