@@ -4,6 +4,7 @@
     height: 104px;
     overflow: scroll;
     margin-top: 30px;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -12,7 +13,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
     .player__container {
         height: 80px;
     }

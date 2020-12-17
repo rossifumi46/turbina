@@ -1,5 +1,4 @@
-import React, {useState, useRef} from 'react';
-import { useMediaQuery } from 'react-responsive'
+import React, {useState, useRef} from 'react'
 
 import PlayerTimeLine from './PlayerTimeLine'
 import throttling from '../../utils/throttlings'
@@ -9,12 +8,10 @@ import playImg from '../../images/play-clip.png'
 
 const classNames = require('classnames');
 
-const Player = () => {
-    
+const Player = ({isPlayerExtend, onPlayerExtend}) => {
 
-    const [ moreContainerIsOpen, setMoreContainerIsOpen] = useState(false)
+    // const [ moreContainerIsOpen, setMoreContainerIsOpen] = useState(false)
     const [ btnsIsActive, setBtnIsActive] = useState(false)
-    const [ coverIsHidden, setCoverIsHidden] = useState(true)
     const [ isTextActive, setIsTextActive] = useState(false)
     const [ switchBtnText, setSwitchBtnText] = useState('Текст песни')
     const [ isPlaying, setIsPlaying ] = useState(false)
@@ -22,27 +19,19 @@ const Player = () => {
     const [duration, setDuration] = useState(0)
     const [currentTrack, setCurrentTrack] = useState(playlist[0])
 
-    const isMobile = useMediaQuery({ query: '(max-width: 767px)' })
-    const isTablet = useMediaQuery({ query: '(max-width: 1023px)' })
-
-    const moreContainerClass = classNames('player__container', {
-        'hidden': !moreContainerIsOpen
-    })
-
+    const moreContainerClass = classNames('player__container')
     const btnsClass= classNames('player__buttons', {
         'hidden': !btnsIsActive
     })
-
-    const coverClass = classNames('player__cover', {
-        'hidden': coverIsHidden
-    })
+    const coverClass = classNames('player__cover')
 
     const cover = <img src={currentTrack.cover} alt="" className={coverClass}/>
 
     const handleMoreClick = () => {
-        setMoreContainerIsOpen(!moreContainerIsOpen)
+        onPlayerExtend()
+
+        // setMoreContainerIsOpen(!moreContainerIsOpen)
         setBtnIsActive(!btnsIsActive)
-        setCoverIsHidden(!coverIsHidden)
     }
 
     const handleSwitchClick = () => {
@@ -73,7 +62,7 @@ const Player = () => {
     })
 
     const moreBtnClass = classNames('player__button player__button_type_more', {
-        'player__button_type_hideplay': moreContainerIsOpen
+        'player__button_type_hideplay': isPlayerExtend
     })    
 
     const onTimeUpdate = throttling(e => {
@@ -87,7 +76,7 @@ const Player = () => {
 
 
     return (
-        <div className="player">
+        <div className="player" style={{height: isPlayerExtend ? '186px' : '42px'}}>
             <audio src={currentTrack.file}
                 ref={myPlayer}
                 onTimeUpdate={onTimeUpdate}
@@ -121,36 +110,38 @@ const Player = () => {
                 <button className="player__button player__button_type_switcher" onClick={handleSwitchClick}>{switchBtnText}</button>
             </div>
             <button className={moreBtnClass} onClick={handleMoreClick}/>
-            {cover}
-            <div className={moreContainerClass}>
-                        <div className={releasesClass}>
-                            <h3 className="player__title">Релизы:</h3>
-                            <ul className="player__list">
-                                {playlist.map(item => 
-                                <li 
-                                    key={item.id}
-                                    className={`player__release ${currentTrack === item ? 'player__release_active' : ''}`}
-                                    onClick={_=> {
-                                        setCurrentTrack(item)
-                                        const status = currentTrack === item ? true : false
-                                        setIsPlaying(status)
-                                    }}
-                                >
-                                    {item.title} - {item.artist}
-                                </li>
-                            
-                                )}
-                            </ul>
-
-                        </div>
-
-                        <div className={textClass}>
-                            <h3 className="player__text-title">Текст</h3>
-                            <p className="player__song-text">
-                                {currentTrack.text}
-                            </p>
-                        </div>
+            {isPlayerExtend && cover}
+            {isPlayerExtend &&
+                <div className={moreContainerClass}>
+                    <div className={releasesClass}>
+                        <h3 className="player__title">Релизы:</h3>
+                        <ul className="player__list">
+                            {playlist.map(item => 
+                            <li 
+                                key={item.id}
+                                className={`player__release ${currentTrack === item ? 'player__release_active' : ''}`}
+                                onClick={_=> {
+                                    setCurrentTrack(item)
+                                    const status = currentTrack === item ? true : false
+                                    setIsPlaying(status)
+                                }}
+                            >
+                                {item.title} - {item.artist}
+                            </li>
+                        
+                            )}
+                        </ul>
                     </div>
+
+                    <div className={textClass}>
+                        <h3 className="player__text-title">Текст</h3>
+                        <p className="player__song-text">
+                            {currentTrack.text}
+                        </p>
+                    </div>
+                </div> 
+            }
+            
         </div>
     )
 }

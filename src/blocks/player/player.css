@@ -1,13 +1,36 @@
 .player {
-    padding: 0 25px 30px;
-    display: flex;
-    width: 100%;
     box-sizing: border-box;
+    padding: 0 25px 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: min-content 35px 1fr max-content 42px;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas: 
+        "cover player player buttons more-btn"
+        "cover .      more   more    .       "
 }
 
-@media screen and  (max-width: 767px) {
+@media screen and (max-width: 768px) {
+    .player {
+        grid-template-columns: 35px min-content 1fr max-content 44px;
+        grid-template-areas:
+        "player player player buttons more-btn"
+        ". cover more more ."
+    }
+}
+
+@media screen and (max-width: 480px) {
     .player {
         padding: 0 14px 30px;
+        padding-bottom: 20px;
+        grid-template-rows: min-content min-content min-content 1fr;
+        grid-template-columns: 26px min-content 1fr 26px;
+        grid-template-areas:
+        "player player  player  more-btn"
+        ".      cover   cover   .         "
+        ".      buttons buttons .         "
+        ".      more    more    .         " 
+
     }
 }
 
@@ -18,33 +41,12 @@
     grid-template-rows: min-content min-content;
     grid-template-areas:
         "btn track-title timer"
-        ". line line "
+        ". line line"
 }
 
-@media screen and  (max-width: 767px) {
+@media screen and  (max-width: 480px) {
     .player__control {
         margin-left: 0;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .player {
-        padding-bottom: 20px;
-    }
-}
-
-.player__additional-container {
-    width: 100%;
-    display: flex;
-}
-
-.player__info-container {
-    width: 100%;
-}
-
-@media screen and  (max-width: 767px) {
-    .player__additional-container {
-        flex-direction: column;
     }
 }
 
@@ -63,23 +65,18 @@
     }
 }
 
-@media screen and  (max-width: 767px) {
+@media screen and  (max-width: 768px) {
+    .player__cover {
+        margin-top: 21px;
+    }
+}
+
+@media screen and  (max-width: 480px) {
     .player__cover {
         width: 240px;
         height: 240px;
-        margin-top: 21px;
         margin-right: auto;
     }
 }
 
 
-
-
-.player {
-    display: grid;
-    grid-template-columns: min-content 35px 1fr max-content 42px;
-    grid-template-rows: min-content 1fr;
-    grid-template-areas: 
-        "cover player player buttons more-btn"
-        "cover    .   more    more       .     "
-}

@@ -33,7 +33,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
     .player__release {
         font-family: 'Inter', Helvetica, Arial, serif;
         font-size: 14px;
