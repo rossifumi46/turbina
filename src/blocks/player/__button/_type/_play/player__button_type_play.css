@@ -1,4 +1,5 @@
 .player__button_type_play {
+    grid-area: btn;
     background-position: center;
     background-image: url('../../../../../images/play.svg');
     background-repeat: no-repeat;
@@ -9,7 +10,6 @@
     width: 20px;
     height: 16px;
     margin: 4px 0px;
-    /*padding: 0;*/
     cursor: pointer;
 }
 

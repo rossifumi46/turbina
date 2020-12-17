@@ -1,4 +1,6 @@
 .player__container {
+    grid-area: more;
+    display: flex;
     height: 104px;
     overflow: scroll;
     margin-top: 30px;
@@ -6,7 +8,7 @@
 
 @media screen and (max-width: 1024px) {
     .player__container {
-        height: 96px;
+        height: 112px;
     }
 }
 
