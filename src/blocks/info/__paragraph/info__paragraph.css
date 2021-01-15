@@ -13,7 +13,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
     .info__paragraph {
         margin-top: 30px;
         line-height: 16px;

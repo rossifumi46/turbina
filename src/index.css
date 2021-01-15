@@ -38,14 +38,11 @@
 @import "./blocks/player/__releases/player__releases.css";
 @import "./blocks/player/__release/player__release.css";
 @import "./blocks/player/__title/player__title.css";
-@import "./blocks/player/__row/player__row.css";
 @import "./blocks/player/__list/player__list.css";
 @import "./blocks/player/__text/player__text.css";
 @import "./blocks/player/__time-remaining/player__time-remaining.css";
-@import "./blocks/player/__wrapper/player__wrapper.css";
 @import "./blocks/player/__progressbar/player__progressbar.css";
 @import "./blocks/player/__progressbar/__progressbar-gone/player__progressbar-gone.css";
-@import "./blocks/player/__progressbar/__progressbar-left/player__progressbar-left.css";
 @import "./blocks/player/__container/player__container.css";
 @import "./blocks/player/__lyrics/player__lyrics.css";
 @import "./blocks/player/__button/_type/_hideplay/player__button_type_hideplay.css";

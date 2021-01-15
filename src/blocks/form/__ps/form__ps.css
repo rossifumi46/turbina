@@ -10,7 +10,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
     .form__ps {
         margin-top: 30px;
         margin-bottom: 40px;

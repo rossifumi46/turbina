@@ -1,7 +1,7 @@
 .player__progressbar-gone {
   height: 100%;
   position: absolute;
-  right: left;
+  left: 0;
   top: 0;
   background-color: #fff; 
 }
