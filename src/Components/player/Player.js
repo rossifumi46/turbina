@@ -26,10 +26,10 @@ const Player = (props) => {
     const moreContainerClass = classNames('player__container')
     const btnsClass= classNames('player__buttons', {
         'hidden': !btnsIsActive
-    })
+    });
     const coverClass = classNames('player__cover')
-
-    const cover = <img src={currentTrack.cover} alt="" className={coverClass}/>
+    
+    const cover = <img src={currentTrack.cover} alt="обложка" className={coverClass}/>;
 
     const calcDefaultHeight = () => {
         switch (true) {
@@ -110,7 +110,7 @@ const Player = (props) => {
                 onTimeUpdate={onTimeUpdate}
                 // onPause
                 onPlay={onPlay}
-                onLoadedData={_ => {
+                onLoadedData={() => {
                     setLeftTime(myPlayer.current.duration);
                     setDuration(myPlayer.current.duration);
                 }}
@@ -144,19 +144,21 @@ const Player = (props) => {
                     <div className={releasesClass}>
                         <h3 className="player__title">Релизы:</h3>
                         <ul className="player__list">
-                            {playlist.map(item => 
-                            <li 
-                                key={item.id}
-                                className={`player__release ${currentTrack === item ? 'player__release_active' : ''}`}
-                                onClick={_=> {
-                                    setCurrentTrack(item)
-                                    const status = currentTrack === item ? true : false
-                                    setIsPlaying(status)
-                                }}
-                            >
-                                {item.title} - {item.artist}
-                            </li>
-                        
+                            {playlist.map(item => {
+                                const releaseClass = classNames('player__release', {
+                                    'player__release_active': currentTrack === item
+                                });
+                                return <li key={item.id}
+                                    className={releaseClass}
+                                    onClick={_=> {
+                                        setCurrentTrack(item)
+                                        const status = currentTrack === item
+                                        setIsPlaying(status)
+                                    }}
+                                >
+                                    {item.title} - {item.artist}
+                                </li>
+                            }
                             )}
                         </ul>
                     </div>
