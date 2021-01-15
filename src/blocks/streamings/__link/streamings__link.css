@@ -23,7 +23,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
     .streamings__link {
         padding: 5px 15px;
         font-size: 12px;

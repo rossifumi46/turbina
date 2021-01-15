@@ -22,7 +22,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
     .form__submit {
         padding: 9px 20px;
     }

@@ -10,7 +10,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
     .info__thesis-items {
         margin-top: 30px;
     }

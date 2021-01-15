@@ -70,7 +70,7 @@ input[type="checkbox"] {
     margin-top: 40px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
     .form__input {
         font-size: 14px;
         margin-top: 6px;

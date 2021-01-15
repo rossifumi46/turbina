@@ -33,7 +33,7 @@ const Streamings = () => {
 
             <ul className={streamListClass}>
                 {streamings.map((streaming) => {
-                    return <li className="streamings__list-item">
+                    return <li className="streamings__list-item" key={streaming.id}>
                         <a className="streamings__link" rel="noreferrer" href={streaming.link} target="_blank">
                             {streaming.title} &#8599;
                         </a>

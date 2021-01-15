@@ -2,6 +2,7 @@
     animation-name: slideDown;
     animation-duration: 1s;
     animation-timing-function: ease;
+    width: 100%;
 }
 
 @keyframes slideDown {

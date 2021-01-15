@@ -33,7 +33,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
     .info__title {
         margin-top: 60px;
         font-size: 32px;
